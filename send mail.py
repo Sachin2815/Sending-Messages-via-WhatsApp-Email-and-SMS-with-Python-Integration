@@ -29,10 +29,14 @@ def send_email(sender_email, sender_password, receiver_email, subject, message):
     smtp_server.sendmail(sender_email, receiver_email, email_text)
     smtp_server.quit()
 
+
 # Example usage
 sender_email = 'sachinsingh58624@gmail.com'
-sender_password = 'passwd'
-receiver_email = 'linuxworld.certificates@gmail.com'
-subject = 'Hello from sachin!'
-message = "I hope you are well , Lets meet soon ."
+sender_password = 'password'
+receiver_email = 'sachin.singh.professional@gmail.com'
+subject = 'Hello from sachin-!'
+message = "I hope you are well ,  let's meet soon."
+
+
+send_email(sender_email, sender_password, receiver_email, subject, message)
 
